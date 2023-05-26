@@ -1,0 +1,73 @@
+#Spotify_content {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: 50px auto;
+    width: 80vw;
+    height: fit-content;
+}
+
+#Spotify_content h2 {
+    color: aliceblue;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+#Spotify_content select,
+#Spotify_content input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+    min-width:280px;
+    max-width: 680px;
+    width: 77%;
+}
+
+#Spotify_content select,#Spotify_content .flex-row {
+    min-width:300px;
+    max-width: 700px;
+    width: 80%;
+}
+#Spotify_content .flex-row{
+    display: flex;
+}
+#Spotify_content .flex-row> select,#Spotify_content .flex-row>input[type="range"]{
+    min-width:200px !important;
+   width: 75%;
+}
+#Spotify_content .flex-row> button{
+    margin-left: 5%;
+    width: 20%;
+    
+    min-width: 70px!important;
+    margin-top: 4px !important;
+}
+
+#Spotify_content button {
+
+    margin-top: 80px;
+    font-size: larger;
+    background-color: #979797;
+    height: 50px;
+    min-width:300px;
+    max-width: 700px;
+    width: 80%;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#Spotify_content button:hover {
+    color: white;
+    background-color: #4d4d4d;
+    border: solid black;
+}

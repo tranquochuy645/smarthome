@@ -1,0 +1,113 @@
+#lighting {
+    color: white;
+    width: 80vw;
+    height: 90vh;
+}
+
+#lighting .large-text {
+    font-size: large;
+}
+
+#lighting .flex-container {
+    display: flex;
+    width: 100%;
+}
+
+/* #lighting .slider {
+    Add your slider styles here
+  }
+   */
+#lighting .slider {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+
+    width: 95%;
+    height: 25px;
+    /* Specified height */
+
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 1;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+#lighting .slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+/* The slider_brn handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+#lighting .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default look */
+    appearance: none;
+    width: 25px;
+    /* Set a specific slider_brn handle width */
+    height: 25px;
+    /* slider_brn handle height */
+    background: #000000;
+    /* Green background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+#lighting .slider::-moz-range-thumb {
+    width: 25px;
+    /* Set a specific slider_brn handle width */
+    height: 25px;
+    /* slider_brn handle height */
+    background: #000000;
+    cursor: pointer;
+    /* Cursor on hover */
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+#lighting .color-range-container {
+    width: 70%;
+}
+
+#lighting .color-output-container {
+    padding-top: 60px;
+    width: 30%;
+    padding-left: 5px;
+
+}
+
+#lighting .color-output {
+
+   
+    margin-top: 10px;
+
+    height: 50%;
+
+    border-radius: 10px;
+    /* Add your color output styles here */
+}
+
+#brn {
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(255, 255, 255));
+
+}
+#RGB{
+    border: solid white;
+    max-width: 150px;
+}
+#color_R {
+    background-image: linear-gradient(to left, rgb(255, 0, 0),rgb(0, 0, 0));
+}
+
+#color_G {
+    background-image: linear-gradient(to left,  rgb(0, 255, 0),rgb(0, 0, 0));
+}
+
+#color_B {
+    background-image: linear-gradient(to left,  rgb(0, 0, 255),rgb(0, 0, 0));
+}

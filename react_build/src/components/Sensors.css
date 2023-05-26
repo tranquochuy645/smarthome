@@ -1,0 +1,19 @@
+
+
+#Sensors{
+
+    min-width: 300px;
+    width: 80vw;
+    height: 90vh;
+    
+}
+#Sensors p,#Sensors h1 {
+    color: white;
+    min-width: 300px;
+    
+}
+
+#Sensors>div {
+    
+    height: 75vh;
+}

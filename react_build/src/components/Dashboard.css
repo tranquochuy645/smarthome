@@ -1,0 +1,123 @@
+#Dashboard>nav {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+ 
+}
+
+#Dashboard>nav button {
+    font-size: x-large;
+    white-space: nowrap;
+    overflow: hidden;
+
+    height: 50px;
+    min-width: 50px;
+    width: 15%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 2%;
+    background-color: #979797;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+
+
+
+#Dashboard>nav button:hover {
+    background-color: #4d4d4d;
+    color: #fff;
+    transform: scale(1.05);
+    border: solid black;
+}
+
+
+
+#Dashboard>nav button.active {
+    background-color: #4d4d4d;
+    color: #fff;
+    transform: scale(1.05);
+    border: solid black;
+}
+
+#Dashboard section {
+    max-height: calc(90vh - 40px);
+}
+
+#Dashboard .flexbox {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Dashboard aside {
+    align-self: start;
+    min-width: 50px;
+    min-height: fit-content;
+    background-color: #313131;
+    padding: 10px;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 16px;
+    margin: 25px;
+}
+
+#Dashboard aside p {
+    margin: 0;
+    font-size: x-large;
+    word-wrap: break-word;
+}
+
+#Dashboard aside p::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+
+}
+
+#Dashboard aside .offline:last-of-type::before {
+    background-color: #ff0000;
+    /* Red color for offline */
+}
+
+#Dashboard aside .online:last-of-type::before {
+    background-color: #00ff00;
+    /* Green color for online */
+}
+
+#Dashboard aside>div{
+    display:flex;
+ 
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+#Dashboard aside .refresh-button,
+.logout-button {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    justify-content: center;
+    align-items: center;
+    margin: 15%;
+    background-color: #979797;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#Dashboard aside .refresh-button:hover,
+.logout-button:hover {
+    background-color: #4d4d4d;
+    color: #fff;
+    transform: scale(1.05);
+}
